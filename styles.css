@@ -117,3 +117,6 @@ a{
     color: black;
     font-weight: bold;
 }
+.contenido-footer li a{
+    font-weight: normal;
+}
