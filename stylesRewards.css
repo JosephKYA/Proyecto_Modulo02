@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing:border-box;
+    line-height: 1.5;
+    color: #212529;
+}
+h1{
+font-size: 2rem;
+}
+h2{
+font-size: 1.5rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1.15rem;
+}
+p{
+font-size: 1rem;
+padding: 5px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.listas-header {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+.menu-izquierdo, .menu-derecho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width:49.36px;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+main{
+    display: flex;
+    flex: 1;
+}
+.left-container{
+    background: linear-gradient(180deg, #216e57 0%, #1f5a44 50%, #1e3932 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 41%;
+}
+.container-saludo h1, .ingresar.button, .unete.button{
+    color: white;
+}
+.container-saludo{
+    width: 400px;
+    text-align: center;
+
+}
+.container-saludo img{
+    width: 80%;
+    margin: auto;
+}
+
+/* Seccion Derecha*/
+.right-container{
+    width: 59%;
+    padding-top: 1rem;
+}
+.row {
+    display: flex;
+    margin: 0;
+    padding: 2rem 2rem;
+}
+.contenedor-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.contenedor-row h2, h3, h4{
+    min-width: 100%;
+    margin-bottom: 20px;
+}
+.elementos-imagenes-texto{
+    flex: 0 0 25%;
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.elementos-imagenes-texto img {
+    width: 60%;
+}
+.elementos-imagenes-texto-star {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.contenedor-row-columna {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pasos-app-imagen-70{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contenedor-pasos-app{
+    width: 60%;
+}
+.imagen-70 {
+    width: 40%;
+    margin: auto;
+}
+.pasos-app {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-right: 20px;
+}
+.pasos-app p{
+    max-width: 30%;
+}
+.pasos-app img {
+    max-width: 125px;
+}
+.gif {
+    min-width: 50%;
+    margin-left: 20px;
+}
+.imagen-70 img{
+    max-width: 100%;
+
+}
+.pasos-app div {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    width: 50px;
+    height: 50px; 
+    background-color: #1e3932;
+    color: white;
+    border-radius: 50%;
+}
+
+iframe {
+    width: 100%;
+    height: 500px;
+}
+.contenedor-row.row-6{
+    gap: 10px;
+}
+.contenedor-row.row-6 .elementos-imagenes-texto{
+    flex: 0 0 32%;
+    max-width: 32%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    text-align: left;
+}
+img.img-star {
+    width: 20%;
+}
+
+.contenedor-row-filas{
+    margin: auto;
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 20px;
+}
+.texto-contendedor{
+    margin: auto;
+    text-align: start;
+    width: 60%;
+}
+
+.contenedor-row-filas .img-row-6{
+    width: 30%;
+
+}
+.contenedor-row-columna.row-7{
+    width: 60%;
+    gap: 20px;
+}
+.contenedor-row-columna.row-7 .gif{
+    max-width: 100px;
+}
+.contenedor-row-filas.row-8{
+    text-align: left;
+}
+.contenedor-row-filas.row-8 img{
+    width: 40%;
+}
+.row.row-9 img{
+    width: 60%;
+    margin: auto;
+}
+
+.row.green-row{
+    background-color: #F1F0EB;
+}
+.row.video{
+    padding: 0;
+}
+
+.pre-footer{
+    padding: 50px 0;
+}
+.contenedor-footer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+}
