@@ -7,10 +7,10 @@
     color: #212529;
 }
 h1{
-font-size: 2rem;
+    font-size: 2rem;
 }
 h2{
-font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 h3{
     font-size: 1.25rem;
@@ -32,6 +32,12 @@ header{
     height: 100px;
     display: flex;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    box-shadow: 0px 0.6px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background-color: white;
 }
 .container{
     width: 60%;
@@ -57,20 +63,36 @@ a{
     color: black;
     font-weight: bold;
 }
+.button {
+    border: 1px solid black;
+    padding: 9px 15px;
+    border-radius: 30px;
+}
 main{
     display: flex;
     flex: 1;
 }
 .left-container{
+    position: sticky;
+    top: 100px;
+    height: calc(100vh - 100px);
+    z-index: 500;
+    box-shadow: rgb(204, 204, 204) 7px 0px 4px -4px;
     background: linear-gradient(180deg, #216e57 0%, #1f5a44 50%, #1e3932 100%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 41%;
+
 }
-.container-saludo h1, .ingresar.button, .unete.button{
+
+.left-container .button{
+    border: 1px solid white;
+}
+.container-saludo h1, .ingresar.button.left, .unete.button.left{
     color: white;
+    margin-bottom: 20px;
 }
 .container-saludo{
     width: 400px;
@@ -238,13 +260,68 @@ img.img-star {
 .row.video{
     padding: 0;
 }
-
 .pre-footer{
     padding: 50px 0;
 }
-.contenedor-footer{
+.pre-footer a{
+    color: #212529;  
+    font-weight: lighter;
+    font-size: calc(1.0188rem + .2256vw);
+    line-height: 2.5;
+}
+.pre-footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pre-footer ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.contenedor-pre-footer{
     width: 80%;
     margin: 0 auto;
     display: flex;
     gap: 60px;
+}
+ 
+.footer{
+    display: block;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+ 
+.redes-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    padding: 20px 0;
+}
+ 
+.redes-sociales {
+    width: 50px;
+    border-radius: 50%;
+}
+ 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+.footer-links a { 
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    line-height: 2.5;
+}
+ 
+.footer-legal {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
 }
