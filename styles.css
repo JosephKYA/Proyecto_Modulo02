@@ -123,6 +123,19 @@ a{
     font-weight: bold;
 }
 
+.localizar-tienda{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icono-ubicacion{
+    width: 16px;
+    height: 16px;
+    display: block;
+    flex-shrink: 0;
+}
+
 .pre-footer{
     padding: 50px 0;
 }

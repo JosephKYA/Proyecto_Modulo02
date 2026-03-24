@@ -63,6 +63,19 @@ a{
     color: black;
     font-weight: bold;
 }
+
+.localizar-tienda{
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.icono-ubicacion{
+    width: 16px;
+    height: 16px;
+    display: block;
+    flex-shrink: 0;
+}
 .button {
     border: 1px solid black;
     padding: 9px 15px;
