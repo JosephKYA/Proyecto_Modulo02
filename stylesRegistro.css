@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    box-sizing:border-box;
+    line-height: 1.5;
+    color: #212529;
+}
+h1{
+    font-size: 2rem;
+}
+h2{
+    font-size: 1.5rem;
+}
+h3{
+    font-size: 1.25rem;
+}
+h4{
+    font-size: 1.15rem;
+}
+p{
+    font-size: 1rem;
+    padding: 5px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    box-shadow: 0px 0.6px 3px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    background-color: white;
+}
+.container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.listas-header {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+.menu-izquierdo, .menu-derecho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    width:49.36px;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.button {
+    border: 1px solid black;
+    padding: 9px 15px;
+    border-radius: 30px;
+}
+main{
+    display: flex;
+    flex: 1;
+}
+
+/* Sección Izquierda */
+.left-container{
+    position: sticky;
+    top: 100px;
+    height: calc(100vh - 100px);
+    z-index: 500;
+    box-shadow: rgb(204, 204, 204) 7px 0px 4px -4px;
+    background: linear-gradient(180deg, #216e57 0%, #1f5a44 50%, #1e3932 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 41%;
+}
+.left-container .button{
+    border: 1px solid white;
+}
+.container-saludo h1{
+    color: white;
+    margin-bottom: 20px;
+}
+.container-saludo{
+    width: 400px;
+    text-align: center;
+}
+
+/* Sección Derecha */
+.right-container{
+    width: 59%;
+}
+.row {
+    display: flex;
+    margin: 0;
+    padding: 2rem 2rem;
+}
+.form-backgraund{
+    background-color: #EDEBE9;
+}
+.contenedor-row-columna {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.contenedor-row-columna.row-7{
+    width: 60%;
+    gap: 20px;
+}
+
+/* Formulario */
+.contenedor-row-columna.row-7 form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 4px;
+}
+.campo label {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #212529;
+}
+.requerido {
+    color: #c8342a;
+    font-weight: bold;
+}
+.campo input[type="email"],
+.campo input[type="password"],
+.campo input[type="text"] {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 0;
+    font-size: 1rem;
+    background: transparent;
+    outline: none;
+    color: #212529;
+}
+.campo input[type="email"]:focus,
+.campo input[type="password"]:focus,
+.campo input[type="text"]:focus {
+    border-bottom: 2px solid #1e3932;
+}
+.input-password {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+.input-password input[type="password"] {
+    border-bottom: none;
+    flex: 1;
+}
+.toggle-password {
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+    padding: 4px;
+}
+.btn-submit {
+    background-color: #00704a;
+    color: white;
+    border: none;
+    padding: 12px 32px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: flex-end;
+    transition: background-color 0.2s;
+}
+.btn-submit:hover {
+    background-color: #1e3932;
+}
+
+/* Secciones internas del formulario de registro */
+.seccion-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 8px;
+}
+.form-titulo {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #212529;
+}
+.form-subtitulo {
+    font-size: 0.85rem;
+    font-weight: normal;
+    color: #555;
+}
+.form-desc {
+    font-size: 0.9rem;
+    color: #444;
+    padding: 4px 0 0 0;
+}
+
+/* Fecha de nacimiento */
+.label-opcional {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: #212529;
+}
+.opcional {
+    font-size: 0.85rem;
+    color: #555;
+    font-weight: normal;
+}
+.campo-desc {
+    font-size: 0.82rem;
+    color: #555;
+    padding: 2px 0 6px 0;
+}
+.fecha-nacimiento {
+    display: flex;
+    gap: 12px;
+}
+.fecha-nacimiento select {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 6px 4px;
+    font-size: 0.95rem;
+    background: transparent;
+    outline: none;
+    color: #212529;
+    cursor: pointer;
+    min-width: 90px;
+}
+.fecha-nacimiento select:focus {
+    border-bottom: 2px solid #1e3932;
+}
+
+/* Radio buttons */
+.campo-radio {
+    gap: 10px;
+}
+.label-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    cursor: pointer;
+}
+.label-radio input[type="radio"] {
+    accent-color: #00704a;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+/* Checkboxes */
+.campo-check {
+    gap: 10px;
+}
+.label-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.9rem;
+    font-weight: normal;
+    cursor: pointer;
+    text-align: left;
+}
+.label-check input[type="checkbox"] {
+    accent-color: #00704a;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    cursor: pointer;
+}
+.link-terminos {
+    color: #00704a;
+    font-weight: normal;
+    text-decoration: underline;
+}
+.link-terminos:hover {
+    color: #1e3932;
+}
+
+/* Banner Rewards */
+.banner-rewards {
+    background-color: #1e1e1e;
+    justify-content: center;
+    padding: 1rem 2rem;
+}
+.banner-rewards p {
+    color: white;
+    font-weight: bold;
+    font-size: 0.95rem;
+    letter-spacing: 0.03em;
+    text-align: center;
+    padding: 0;
+}
+
+/* Sección Únete */
+.row-unete {
+    background-color: #f1f0eb;
+    padding: 2.5rem 2rem;
+}
+.row-unete .contenedor-row-columna {
+    width: 80%;
+}
+.row-unete h2 {
+    margin-bottom: 8px;
+}
+.texto-unete {
+    color: #212529;
+    max-width: 420px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.unete-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.btn-unete {
+    border: 2px solid #1e3932;
+    color: #1e3932;
+    padding: 10px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, color 0.2s;
+    white-space: nowrap;
+}
+.btn-unete:hover {
+    background-color: #1e3932;
+    color: white;
+}
+.imagen-rewards img {
+    max-width: 220px;
+    width: 100%;
+}
+
+/* Pre-footer */
+.pre-footer{
+    padding: 50px 0;
+}
+.pre-footer a{
+    color: #212529;  
+    font-weight: lighter;
+    font-size: calc(1.0188rem + .2256vw);
+    line-height: 2.5;
+}
+.pre-footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.pre-footer ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+.contenedor-pre-footer{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+}
+
+/* Footer */
+.footer{
+    display: block;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.redes-lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 10px;
+    padding: 20px 0;
+}
+.redes-sociales {
+    width: 50px;
+    border-radius: 50%;
+}
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+.footer-links a { 
+    font-weight: lighter;
+    letter-spacing: 0.01em;
+    line-height: 2.5;
+}
+.footer-legal {
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: center;
+}
